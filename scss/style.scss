@@ -9,30 +9,29 @@
 body{
     font-family: 'Playfair Display', serif;
 }
-.photoblog-text1{
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 300;
-    font-size: 14px;
-    color: var(--text1color);
-}
-.header-link{
-    font-weight: 400;
-    font-size: 14px; 
-    text-decoration: none;
-    color: var(--linkcolor);
-}
-.header-link:hover{
-    color: var(--linkhovercolor);
-}
-.photoblog-title{
-    font-weight: 400;
-    font-size: 30px;
-    color: var(--photoblogtitlecolor);
-}
-.photoblog-text2{
-    font-weight: 400;
-    font-size: 14px;
-    color: var(--photoblogtext2color);
+.photoblog{
+    display: flex;
+    flex-wrap: wrap;
+    width: 906px;
+    margin: 0 auto;
+    justify-content: space-between;
+
+    &-text1{
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 300;
+        font-size: 14px;
+        color: var(--text1color);
+    }
+    &-title{
+        font-weight: 400;
+        font-size: 30px;
+        color: var(--photoblogtitlecolor);
+    }
+    &-text2{
+        font-weight: 400;
+        font-size: 14px;
+        color: var(--photoblogtext2color);
+    }
 }
 .button{
     font-weight: 400;
@@ -80,17 +79,19 @@ body{
     height: 516px;
     padding: 0px 0px 0px 0px;
 }
-.header-menu{
-    display: flex;
-    justify-content: space-around;
-}
-.photoblog{
-    display: flex;
-    flex-wrap: wrap;
-    width: 906px;
-    margin: 0 auto;
-    justify-content: space-between;
-}
-header{
+.header{
     margin-bottom: 50px;
+    &-link{
+        font-weight: 400;
+        font-size: 14px; 
+        text-decoration: none;
+        color: var(--linkcolor);
+        &:hover{
+            color: var(--linkhovercolor);
+        }
+    }
+    &-menu{
+        display: flex;
+        justify-content: space-around;
+    }
 }
