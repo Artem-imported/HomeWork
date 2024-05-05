@@ -41,6 +41,8 @@ body{
     height: 60px;
     color: #626262;
     background-color: var(--photoblogbuttoncolor);
+    position: relative;
+    left: 510px;
 }
 .container{
     width: 1206px;
