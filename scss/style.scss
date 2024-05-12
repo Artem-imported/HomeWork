@@ -1,11 +1,9 @@
-.root{
-    --text1color: #B4AD9E;
-    --linkcolor: #7D7D7D;
-    --linkhovercolor: #03A9F4;
-    --photoblogtitlecolor: #626262;
-    --photoblogtext2color: #626262;
-    --photoblogbuttoncolor: #626262;
-}
+$text1color: #B4AD9E;
+$linkcolor: #7D7D7D;
+$linkhovercolor: #03A9F4;
+$photoblogtitlecolor: #626262;
+$photoblogtext2color: #626262;
+$photoblogbuttoncolor: #626262;
 body{
     font-family: 'Playfair Display', serif;
 }
@@ -20,17 +18,21 @@ body{
         font-family: 'Ubuntu', sans-serif;
         font-weight: 300;
         font-size: 14px;
-        color: var(--text1color);
+        color: $text1color;
     }
     &-title{
         font-weight: 400;
         font-size: 30px;
         color: var(--photoblogtitlecolor);
+        color: $photoblogtitlecolor;
     }
     &-text2{
         font-weight: 400;
         font-size: 14px;
-        color: var(--photoblogtext2color);
+        color: $photoblogtext2color;
+    }
+    &-img{
+        border-radius: 15px;
     }
 }
 .button{
@@ -38,10 +40,10 @@ body{
     font-size: 14px;
     width: 165px;
     height: 60px;
-    color: #626262;
-    background-color: var(--photoblogbuttoncolor);
+    color: $photoblogbuttoncolor;
     position: relative;
     left: 510px;
+    border-radius: 15px;
 }
 .container{
     width: 1206px;
@@ -85,9 +87,9 @@ body{
         font-weight: 400;
         font-size: 14px; 
         text-decoration: none;
-        color: var(--linkcolor);
+        color: $linkcolor;
         &:hover{
-            color: var(--linkhovercolor);
+            color: $linkhovercolor;
         }
     }
     &-menu{
