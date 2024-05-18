@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
 body {
   font-family: "Playfair Display", serif;
 }
@@ -5,29 +11,36 @@ body {
 .photoblog {
   display: flex;
   flex-wrap: wrap;
-  width: 906px;
+  width: 90vw;
   margin: 0 auto;
-  justify-content: space-between;
+  justify-content: center;
+  row-gap: 130px;
+  -moz-column-gap: 65px;
+       column-gap: 65px;
 }
-.photoblog-text1 {
+.photoblog__card {
+  width: 30vw;
+}
+.photoblog__card--text1 {
   font-family: "Ubuntu", sans-serif;
   font-weight: 300;
   font-size: 14px;
   color: #B4AD9E;
 }
-.photoblog-title {
+.photoblog__card--title {
   font-weight: 400;
   font-size: 30px;
   color: var(--photoblogtitlecolor);
   color: #626262;
 }
-.photoblog-text2 {
+.photoblog__card--text2 {
   font-weight: 400;
   font-size: 14px;
   color: #626262;
 }
-.photoblog-img {
+.photoblog__card--img {
   border-radius: 15px;
+  margin-bottom: 30px;
 }
 
 .button {
@@ -48,55 +61,19 @@ body {
   padding-right: 15px;
 }
 
-.container1 {
-  width: 420px;
-  height: 546px;
-  padding: 0px 0px 0px 0px;
-}
-
-.container2 {
-  width: 420px;
-  height: 546px;
-  padding: 0px 0px 0px 0px;
-}
-
-.container3 {
-  width: 421px;
-  height: 516px;
-  padding: 0px 0px 0px 0px;
-}
-
-.container4 {
-  width: 420px;
-  height: 516px;
-  padding: 0px 0px 0px 0px;
-}
-
-.container5 {
-  width: 420px;
-  height: 516px;
-  padding: 0px 0px 0px 0px;
-}
-
-.container6 {
-  width: 420px;
-  height: 516px;
-  padding: 0px 0px 0px 0px;
-}
-
 .header {
   margin-bottom: 50px;
 }
-.header-link {
-  font-weight: 400;
+.header__menu {
+  display: flex;
+  justify-content: space-around;
+}
+.header__menu--link {
+  font-weight: 800;
   font-size: 14px;
   text-decoration: none;
   color: #7D7D7D;
 }
-.header-link:hover {
+.header__menu--link:hover {
   color: #03A9F4;
-}
-.header-menu {
-  display: flex;
-  justify-content: space-around;
 }
